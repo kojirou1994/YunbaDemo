@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YunBaDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +18,55 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgK-am-pgm" userLabel="Demo Scroll View">
+                                <rect key="frame" x="20" y="61" width="560" height="309.5"/>
+                                <animations/>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="15T-88-TIh" userLabel="Message Scroll View">
+                                <rect key="frame" x="20" y="406.5" width="560" height="185.5"/>
+                                <animations/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJT-Nw-lBK">
+                                <rect key="frame" x="263" y="378.5" width="74" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DisConnected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cba-7M-7hf">
+                                <rect key="frame" x="229" y="28" width="143" height="25.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OgK-am-pgm" firstAttribute="top" secondItem="cba-7M-7hf" secondAttribute="bottom" constant="8" symbolic="YES" id="0Tg-8Y-Wrj"/>
+                            <constraint firstItem="15T-88-TIh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1Rj-qX-gE6"/>
+                            <constraint firstItem="OgK-am-pgm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7lh-Hd-nnt"/>
+                            <constraint firstItem="cba-7M-7hf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="AvG-jX-s88"/>
+                            <constraint firstItem="gJT-Nw-lBK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hwf-re-b0T"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="15T-88-TIh" secondAttribute="bottom" constant="8" symbolic="YES" id="bPm-86-QRA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="15T-88-TIh" secondAttribute="trailing" id="g6u-5V-s4b"/>
+                            <constraint firstItem="15T-88-TIh" firstAttribute="height" secondItem="OgK-am-pgm" secondAttribute="height" multiplier="0.6" id="lfQ-Mh-Z2d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OgK-am-pgm" secondAttribute="trailing" id="pnX-0j-Xl1"/>
+                            <constraint firstItem="cba-7M-7hf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tKV-Wf-JkQ"/>
+                            <constraint firstItem="15T-88-TIh" firstAttribute="top" secondItem="gJT-Nw-lBK" secondAttribute="bottom" constant="8" symbolic="YES" id="wOY-pS-dxZ"/>
+                            <constraint firstItem="gJT-Nw-lBK" firstAttribute="top" secondItem="OgK-am-pgm" secondAttribute="bottom" constant="8" symbolic="YES" id="wUj-P1-6EK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="demoScrollView" destination="OgK-am-pgm" id="MUX-Eh-Cre"/>
+                        <outlet property="messageScrollView" destination="15T-88-TIh" id="u2K-gn-827"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="300" y="420"/>
         </scene>
     </scenes>
 </document>

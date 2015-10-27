@@ -15,7 +15,7 @@
 		E3AE80E41BDFCA7F00734FD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3AE80E21BDFCA7F00734FD3 /* LaunchScreen.storyboard */; };
 		E3AE80EF1BDFCA7F00734FD3 /* YunBaDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AE80EE1BDFCA7F00734FD3 /* YunBaDemoTests.swift */; };
 		E3AE80FA1BDFCA7F00734FD3 /* YunBaDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AE80F91BDFCA7F00734FD3 /* YunBaDemoUITests.swift */; };
-		E3AE810A1BDFCB5A00734FD3 /* YBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3AE81091BDFCB5A00734FD3 /* YBViewController.xib */; };
+		E3AE810A1BDFCB5A00734FD3 /* DemoSV.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3AE81091BDFCB5A00734FD3 /* DemoSV.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		E3AE80F51BDFCA7F00734FD3 /* YunBaDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YunBaDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3AE80F91BDFCA7F00734FD3 /* YunBaDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YunBaDemoUITests.swift; sourceTree = "<group>"; };
 		E3AE80FB1BDFCA7F00734FD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E3AE81091BDFCB5A00734FD3 /* YBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YBViewController.xib; sourceTree = "<group>"; };
+		E3AE81091BDFCB5A00734FD3 /* DemoSV.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoSV.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,7 @@
 			children = (
 				E3AE80D61BDFCA7F00734FD3 /* AppDelegate.swift */,
 				E3AE80D81BDFCA7F00734FD3 /* ViewController.swift */,
-				E3AE81091BDFCB5A00734FD3 /* YBViewController.xib */,
+				E3AE81091BDFCB5A00734FD3 /* DemoSV.xib */,
 				E3AE80DA1BDFCA7F00734FD3 /* Main.storyboard */,
 				E3AE80E01BDFCA7F00734FD3 /* Assets.xcassets */,
 				E3AE80E21BDFCA7F00734FD3 /* LaunchScreen.storyboard */,
@@ -237,7 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3AE80E41BDFCA7F00734FD3 /* LaunchScreen.storyboard in Resources */,
-				E3AE810A1BDFCB5A00734FD3 /* YBViewController.xib in Resources */,
+				E3AE810A1BDFCB5A00734FD3 /* DemoSV.xib in Resources */,
 				E3AE80E11BDFCA7F00734FD3 /* Assets.xcassets in Resources */,
 				E3AE80DC1BDFCA7F00734FD3 /* Main.storyboard in Resources */,
 			);
